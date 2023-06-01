@@ -1,0 +1,132 @@
+[
+    {
+        "name" : "Tutorial",
+        "duration" : 17.0,
+        "file" : "song0.wav",
+        "speed" : 0.15,
+        "poses" : [
+            {
+                "time" : 1.7,
+                "pose" : "left"
+            },
+            {
+                "time" : 3.7,
+                "pose" : "right"
+            },
+            {
+                "time" : 6,
+                "pose" : "both"
+            },
+            {
+                "time" : 8,
+                "pose" : "left"
+            },
+            {
+                "time" : 10,
+                "pose" : "right"
+            },
+            {
+                "time" : 12.5,
+                "pose" : "both"
+            },
+            {
+                "time" : 14.5,
+                "pose" : "left"
+            },
+            {
+                "time" : 16.5,
+                "pose" : "right"
+            }
+        ]
+    },
+
+    {
+        "name" : "Song 1",
+        "duration" : 17.0,
+        "file" : "song1.wav",
+        "speed" : 0.15,
+        "poses" : [
+            {
+                "time" : 0.5,
+                "pose" : "left"
+            },
+            {
+                "time" : 1.5,
+                "pose" : "right"
+            },
+            {
+                "time" : 2.5,
+                "pose" : "both"
+            },
+            {
+                "time" : 3.3,
+                "pose" : "left"
+            },
+            {
+                "time" : 3.5,
+                "pose" : "right"
+            },
+            {
+                "time" : 4.5,
+                "pose" : "left"
+            },
+            {
+                "time" : 5.5,
+                "pose" : "right"
+            },
+            {
+                "time" : 6.5,
+                "pose" : "both"
+            },
+            {
+                "time" : 7.3,
+                "pose" : "left"
+            },
+            {
+                "time" : 7.5,
+                "pose" : "right"
+            },
+            {
+                "time" : 9.5,
+                "pose" : "left"
+            },
+            {
+                "time" : 10.5,
+                "pose" : "right"
+            },
+            {
+                "time" : 11.5,
+                "pose" : "both"
+            },
+            {
+                "time" : 12.3,
+                "pose" : "left"
+            },
+            {
+                "time" : 12.5,
+                "pose" : "right"
+            },
+            {
+                "time" : 13.5,
+                "pose" : "left"
+            },
+            {
+                "time" : 14.5,
+                "pose" : "right"
+            },
+            {
+                "time" : 15.5,
+                "pose" : "both"
+            },
+            {
+                "time" : 16.3,
+                "pose" : "left"
+            },
+            {
+                "time" : 16.5,
+                "pose" : "right"
+            }
+
+        ]
+    }
+]
