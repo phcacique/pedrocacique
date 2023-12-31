@@ -150,15 +150,15 @@ function draw() {
 
   let frames = map(persistencia, 0, 100, 10, TOTAL_TIME)
   
-  if (frameCount % frames == 0) {
+  if (frameCount % frames <= 1) {
     const c = color(bg_h, bg_s, bg_b);
 	  background(c);
     offset = 10
   }
 
-  let frames2 = map(desordenacao, 0, 100, TOTAL_TIME, 0)
-  if (frameCount % frames2 == 0) {
-    t *= 10
+  let frames2 = map(desordenacao, 0, 100, TOTAL_TIME/2, 0)
+  if (frameCount % frames2 <= 1) {
+    t *= 2
   }
 
   
