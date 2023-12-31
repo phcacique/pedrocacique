@@ -1,4 +1,4 @@
-
+var TOTAL_TIME = 1000
 
 // PERSISTÊNCIA
 var persistencia = 99.2;
@@ -114,6 +114,7 @@ function changeBG(){
 }
 
 function draw() {
+  
   color_step = 0.1 * map(extravagancia, 0, 100, 1, 10)
   
   offset = 10 
@@ -147,18 +148,17 @@ function draw() {
 
   t += 0.005 * impulso
 
-  // clear the background every 500 frames using mod (%) operator
-  let frames = map(persistencia, 0, 100, 10, 1000)
+  let frames = map(persistencia, 0, 100, 10, TOTAL_TIME)
   
-  if (frameCount % frames <= 1) {
+  if (frameCount % frames == 0) {
     const c = color(bg_h, bg_s, bg_b);
 	  background(c);
     offset = 10
   }
 
-  let frames2 = map(desordenacao, 0, 100, 1000, 10)
-  if (frameCount % frames2 <= 1) {
-    t *= 2
+  let frames2 = map(desordenacao, 0, 100, TOTAL_TIME, 0)
+  if (frameCount % frames2 == 0) {
+    t *= 10
   }
 
   
