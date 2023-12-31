@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temperamento</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    
+    <nav>
+      <header>
+        <img alt="Cacique" src="logo_circle_white.png"/>
+      </header>
+
+      <div id="buttons">
+        <button onclick="restart()">RESET</button>
+        <button onclick="saveArt()">SCREENSHOT</button>
+        <button onclick="changeBG()">CLEAR</button>
+      </div>
+
+      <div>
+        <h1>Persistência</h1>
+        <p>
+          Persistência<br>
+          <small><i>(tempo de reset)</i></small><br>
+          <div class="slid">
+            <input id="persistencia" type="range" min="1" max="100" value="50" step="1" class="slider" onchange="updateSlider('persistencia',this.value)"/>
+            <input type="text" id="text_persistencia" onchange="updateSlider('persistencia',this.value)"/>
+          </div>
+        </p>
+      </div>
+
+      <hr>
+
+      <div>
+        <h1>Busca por Novidade</h1>
+        <p>
+          Excitabilidade Exploratória vs. Rigidez <br>
+          <small><i>(desfoque)</i></small><br>
+          <div class="slid">
+            <input id="excitabilidade" type="range" min="1" max="100" value="50" step="1" class="slider" onchange="updateSlider('excitabilidade',this.value)">
+            <input type="text" id="text_excitabilidade" onchange="updateSlider('excitabilidade',this.value)"/>
+          </div>
+        </p>
+        <p>
+          Impulsividade vs. Reflexão <br>
+          <small><i>(velocidade)</i></small><br>
+          <div class="slid">
+            <input id="impulsividade" type="range" min="1" max="100" value="50" step="1" class="slider" onchange="updateSlider('impulsividade',this.value)">
+            <input type="text" id="text_impulsividade" onchange="updateSlider('impulsividade',this.value)"/>
+          </div>
+        </p>
+        <p>
+          Extravagância vs. Reserva <br>
+          <small><i>(variação de cor)</i></small><br>
+          <div class="slid">
+            <input id="extravagancia" type="range" min="1" max="100" value="50" step="1" class="slider" onchange="updateSlider('extravagancia',this.value)">
+            <input type="text" id="text_extravagancia" onchange="updateSlider('extravagancia',this.value)"/>
+          </div>
+        </p>
+        <p>
+          Desordenação vs. Organização <br>
+          <small><i>(pulsos)</i></small><br>
+          <div class="slid">
+            <input id="desordenacao" type="range" min="1" max="100" value="50" step="1" class="slider" onchange="updateSlider('desordenacao',this.value)">
+            <input type="text" id="text_desordenacao" onchange="updateSlider('desordenacao',this.value)"/>
+          </div>
+        </p>
+        
+      </div>
+      <hr>
+      <div>
+        <h1>Esquiva ao Dano</h1>
+        <p>
+          Medo da incerteza vs. Confiança<br>
+          <small><i>(brilho da linha)</i></small><br>
+          <div class="slid">
+            <input id="medoIncerteza" type="range" min="1" max="100" value="50" step="1" class="slider" onchange="updateSlider('medoIncerteza',this.value)">
+            <input type="text" id="text_medoIncerteza" onchange="updateSlider('medoIncerteza',this.value)"/>
+          </div>
+        </p>
+        <p>
+          Timidez vs. Sociabilidade<br>
+          <small><i>(largura da linha)</i></small><br>
+          <div class="slid">
+            <input id="timidez" type="range" min="1" max="100" value="50" step="1" class="slider" onchange="updateSlider('timidez',this.value)">
+            <input type="text" id="text_timidez" onchange="updateSlider('timidez',this.value)"/>
+          </div>
+        </p>
+        <p>
+          Fadigabilidade e Astenia vs. Vigor<br>
+          <small><i>(comprimento to tracejado)</i></small><br>
+          <div class="slid">
+            <input id="fadigabilidade" type="range" min="1" max="100" value="50" step="1" class="slider" onchange="updateSlider('fadigabilidade'.this.value)">
+            <input type="text" id="text_fadigabilidade" onchange="updateSlider('fadigabilidade',this.value)"/>
+          </div>
+        </p>
+        <p>
+          Preocupação Antecipatória vs. Otimismo <br>
+          <small><i>(espaçamento to tracejado)</i></small><br>
+          <div class="slid">
+            <input id="preocupacao" type="range" min="1" max="100" value="50" step="1" class="slider" onchange="updateSlider('preocupacao',this.value)">
+            <input type="text" id="text_preocupacao" onchange="updateSlider('preocupacao',this.value)"/>
+          </div>
+        </p>
+      </div>
+
+      <hr>
+
+      <div>
+        <h1>Dependência por Gratificação</h1>
+        <p>
+          Dependência vs. Independência<br>
+          <small><i>(cor do fundo)</i></small><br>
+          <div class="slid">
+            <input id="dependencia" type="range" min="1" max="100" value="50" step="1" class="slider" onchange="updateSlider('dependencia',this.value)">
+            <input type="text" id="text_dependencia" onchange="updateSlider('dependencia',this.value)"/>
+          </div>
+        </p>
+        <p>
+          Apego vs. Desapego<br>
+          <small><i>(saturação do fundo)</i></small><br>
+          <div class="slid">
+            <input id="apego" type="range" min="1" max="100" value="50" step="1" class="slider" onchange="updateSlider('apego',this.value)">
+            <input type="text" id="text_apego" onchange="updateSlider('apego',this.value)"/>
+          </div>
+        </p>
+        <p>
+          Sentimentalismo vcs. Insensibilidade<br>
+          <small><i>(Brilho do fundo)</i></small><br>
+          <div class="slid">
+            <input id="sentimentalismo" type="range" min="1" max="100" value="50" step="1" class="slider" onchange="updateSlider('sentimentalismo',this.value)">
+            <input type="text" id="text_sentimentalismo" onchange="updateSlider('sentimentalismo',this.value)"/>
+          </div>
+        </p>
+        
+        
+      </div>
+
+      <footer>
+        made by <a href="https://pedrocacique.com">Pedro Cacique</a>
+      </footer>
+
+    </nav>
+
+    <script src="sketch.js"></script>
+  </body>
+</html>

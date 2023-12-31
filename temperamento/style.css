@@ -1,0 +1,123 @@
+canvas {
+  display: block;
+}
+
+ html, body
+ {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   
+   color: white;
+   font-family: "Avenir Next", "Avenir", sans-serif;
+ }
+
+body{
+  display: flex;
+}
+
+ nav {
+  background-color: black;
+  color: white;
+  height: calc(100% - 20px);
+  width: 300px;
+  padding: 10px;
+  overflow-y: auto;
+ }
+
+ .slider {
+  -webkit-appearance: none;
+  width: calc(100% - 10px);
+  height: 15px;
+  background: black;
+  border: 1px solid white;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 10px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+}
+
+nav h1{
+  font-size: 1em;
+}
+
+hr{
+  display: block;
+  border: none;
+  height: 1px;
+  background-color: white;
+  margin: 40px 0
+}
+
+header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+header img{
+  width: 40px;
+}
+
+small {
+  font-weight: 100;
+  font-size: 0.7em;
+}
+
+button{
+  border: none;
+  padding: 10px;
+  color: black;
+  background-color: white;
+  width: 100%
+}
+
+#buttons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+footer {
+  margin: 40px 0;
+  font-weight: 100;
+  font-size: 0.7em;
+  text-align: center;
+}
+
+a {
+  color: white
+}
+
+.slid{ 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+input[type="text"] {
+  background: black;
+  border: 1px solid white;
+  color: white;
+  outline: none;
+  height: 14px;
+  width: 30px;
+}
