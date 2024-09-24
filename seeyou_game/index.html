@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <meta charset='utf-8' />
+    <title>See You</title>
+    <link rel="stylesheet" type="text/css" href="css/style_index.css" />
+    <link rel="stylesheet" type="text/css" href="css/speech.css" />
+    <script type="text/javascript">
+        var content, iPhone;
+        window.onload = function() {
+            content = document.getElementById('content');
+            iPhone = document.getElementById('iPhone');
+
+            iPhone.style.height = (innerHeight * 0.9) + "px";
+
+            content.style.width = (iPhone.offsetWidth * 0.85) + "px";
+            content.style.height = (iPhone.offsetHeight * 0.94) + "px";
+
+            content.style.marginLeft = (iPhone.offsetWidth * 0.08) + "px";
+            content.style.marginTop = (iPhone.offsetHeight * 0.03) + "px";
+
+            //            content.innerHTML = "<div><img id='logo' src='img/see_you.png' /><article><a href='game.html'><div class='but' id='start'>Jogar</div></a></article><article><a href='index.html'><div class='but' id='settings'>Configurar</div></a></article><article><a href='credits.html'><div class='but' id='credits'>Créditos</div></a></article></div><article><img alt='main character' src='img/avatar.png' /><div class='cbbl -right'>Suas escolhas podem influenciar as pessoas de uma forma que você não imagina</div></article>"
+
+            content.innerHTML = "<div><img id='logo' src='img/see_you.png' /><article><a href='game.html'><div class='but' id='start'>Jogar</div></a></article><article><a href='credits.html'><div class='but' id='credits'>Créditos</div></a></article></div><article><img alt='main character' src='img/avatar.png' /><div class='cbbl -right'>Suas escolhas podem influenciar as pessoas de uma forma que você não imagina</div></article>"
+        }
+
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-75734371-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-75734371-1');
+
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N9P57RL');
+
+    </script>
+    <!-- End Google Tag Manager -->
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9P57RL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <section id='main'>
+        <img id='iPhone' src="img/iPhone_portrait.png" />
+        <section id='content'>
+
+
+
+
+        </section>
+    </section>
+</body>
+
+</html>
