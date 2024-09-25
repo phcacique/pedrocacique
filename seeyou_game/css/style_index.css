@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'pixel';
+    src: url('FreePixel.ttf');
+}
+
+* {
+    font-family: pixel;
+    /*    text-transform: uppercase;*/
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    height: 90%;
+}
+
+#iPhone {
+    height: 100%;
+    position: absolute;
+}
+
+#content {
+    width: 30%;
+    background: #fad6b3;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #fad6b3 0%, #009eb0 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #fad6b3 0%, #009eb0 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #fad6b3 0%, #009eb0 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fad6b3', endColorstr='#009eb0', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-flow: row wrap;  
+    overflow: auto;
+}
+
+#content div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;    
+}
+
+article {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+a{
+    width: calc(100% - 15px);
+    text-decoration: none;
+}
+
+article img {
+    width: 60px;
+}
+
+#logo{
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+#credits p{
+    width: 80%;
+}
+
+#credits{
+    margin-bottom: 20px;
+}
+
+#back{
+    position: absolute;
+    width: 30px;
+    top: 80px;
+    margin-left: 45px;
+    cursor: pointer;
+}

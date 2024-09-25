@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>See You</title>
+    <link rel="stylesheet" type="text/css" href="css/style_index.css" />
+    <link rel="stylesheet" type="text/css" href="css/speech.css" />
+    <script type="text/javascript">
+        var content, iPhone;
+        window.onload = function() {
+            content = document.getElementById('content');
+
+            iPhone = document.getElementById('iPhone');
+            iPhone.style.height = (innerHeight * 0.9) + "px";
+
+            content.style.width = (iPhone.offsetWidth * 0.85) + "px";
+            content.style.height = (iPhone.offsetHeight * 0.94) + "px";
+
+            content.style.marginLeft = (iPhone.offsetWidth * 0.08) + "px";
+            content.style.marginTop = (iPhone.offsetHeight * 0.03) + "px";
+
+            content.innerHTML = "<div id='credits'><img id='logo' src='img/see_you.png' /><p>DIEGO JESUS ALMEIDA</p><p>HENRIQUE GOMES DE OLIVEIRA ANDRADE</p><p>ISAQUE OLIVEIRA DOS SANTOS</p><p>KADU DE LA HIGUERA MARIO AMATO</p><p>PEDRO HENRIQUE CACIQUE BRAGA</p><p>RODRIGO SINGH GEDAM</p></div>";
+
+        }
+
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-75734371-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-75734371-1');
+
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N9P57RL');
+
+    </script>
+    <!-- End Google Tag Manager -->
+
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9P57RL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <section id='main'>
+        <img id='iPhone' src="img/iPhone_portrait.png" />
+        <a href='index.html'><img id='back' src='img/back.png'/></a>
+        <section id='content'>
+
+
+
+        </section>
+
+    </section>
+</body>
+
+</html>
